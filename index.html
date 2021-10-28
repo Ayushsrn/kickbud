@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="boxed">
+<html>
   <head>
     <!-- Basic -->
     <meta charset="utf-8" />
@@ -84,389 +84,423 @@
     <script src="vendor/modernizr/modernizr.min.js"></script>
   </head>
   <body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
+    <!-- NAV + HERO -->
+
     <div class="body">
       <header
         id="header"
-        class="header-transparent"
-        data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 1, 'stickyHeaderContainerHeight': 70}"
+        class="header-effect-shrink"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}"
       >
-        <div class="header-body header-border-bottom overflow-visible">
+        <div class="header-body">
           <div class="header-container container">
-            <div class="header-row py-3">
-              <div class="header-column flex-row w-auto">
-                <div class="header-logo">
-                  <a href="demo-product-landing.html">
-                    <img
-                      src="logo.png"
-                      alt="Kickbud Logo"
-                      width="189"
-                      height="46"
-                    />
-                  </a>
+            <div class="header-row">
+              <div class="header-column">
+                <div class="header-row">
+                  <div class="header-logo">
+                    <a href="index.html">
+                      <img
+                        alt="Porto"
+                        width="128"
+                        height="45"
+                        data-sticky-width="128"
+                        data-sticky-height="45"
+                        src="logo.png"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="header-column w-100 ps-lg-5">
-                <div class="header-nav w-100 p-0">
-                  <div
-                    class="
-                      header-nav
-                      header-nav-line
-                      header-nav-bottom-line
-                      header-nav-bottom-line-effect-1
-                      justify-content-start
-                      w-100
-                    "
-                  >
+              <div class="header-column justify-content-end">
+                <div class="header-row">
+                  <div class="header-nav header-nav-links order-2 order-lg-1">
                     <div
                       class="
                         header-nav-main
-                        header-nav-main-arrows
+                        header-nav-main-square
                         header-nav-main-effect-2
                         header-nav-main-sub-effect-1
-                        w-100
                       "
                     >
-                      <nav class="collapse w-100">
-                        <ul
-                          class="nav nav-pills flex-column flex-lg-row w-100"
-                          id="mainNav"
-                        >
-                          <li class="dropdown">
-                            <a
-                              class="dropdown-item active"
-                              data-hash
-                              data-hash-offset="70"
-                              href="#about"
-                              >About</a
-                            >
-                          </li>
-                          <li class="dropdown">
-                            <a
-                              class="dropdown-item"
-                              data-hash
-                              data-hash-offset="70"
-                              href="#features"
-                              >Features</a
-                            >
+                      <nav class="collapse">
+                        <ul class="nav nav-pills" id="mainNav">
+                          <li>
+                            <a href="index.html">About</a>
                           </li>
 
-                          <li class="dropdown">
-                            <a
-                              class="dropdown-item"
-                              data-hash
-                              data-hash-offset="90"
-                              href="#reviews"
-                              >Reviews</a
-                            >
+                          <li>
+                            <a href="elements.html">How to Play </a>
                           </li>
-                          <li class="dropdown">
-                            <a
-                              class="dropdown-item"
-                              href="demo-product-landing-checkout.html"
-                              >Buy Now</a
-                            >
+
+                          <li>
+                            <a href="#">Shop</a>
                           </li>
                         </ul>
                       </nav>
                     </div>
+                    <button
+                      class="btn header-btn-collapse-nav"
+                      data-bs-toggle="collapse"
+                      data-bs-target=".header-nav-main nav"
+                    >
+                      <i class="fas fa-bars"></i>
+                    </button>
                   </div>
-                </div>
-              </div>
-              <div class="header-column flex-row w-auto">
-                <div class="header-nav-features ps-0 ms-1">
                   <div
                     class="
-                      header-nav-feature
-                      header-nav-features-cart
-                      header-nav-features-cart-big
-                      d-inline-flex
-                      top-2
-                      ms-2
+                      header-nav-features
+                      header-nav-features-no-border
+                      header-nav-features-lg-show-border
+                      order-1 order-lg-2
                     "
                   >
-                    <a href="#" class="header-nav-features-toggle">
-                      <img
-                        src="img/icons/icon-cart-big.svg"
-                        height="30"
-                        alt=""
-                        class="header-nav-top-icon-img"
-                      />
-                      <span class="cart-info">
-                        <span class="cart-qty">1</span>
-                      </span>
-                    </a>
                     <div
-                      class="header-nav-features-dropdown"
-                      id="headerTopCartDropdown"
+                      class="
+                        header-nav-feature header-nav-features-search
+                        d-inline-flex
+                      "
                     >
-                      <ol class="mini-products-list">
-                        <li class="item">
-                          <a href="#" title="Camera X1000" class="product-image"
-                            ><img
-                              src="img/demos/product-landing/product-carousel-1.jpg"
-                              alt=" Headphone"
-                          /></a>
-                          <div class="product-details">
-                            <p class="product-name">
-                              <a href="#"> Headphone </a>
-                            </p>
-                            <p class="qty-price">
-                              1X <span class="price">$350</span>
-                            </p>
+                      <a
+                        href="#"
+                        class="header-nav-features-toggle text-decoration-none"
+                        data-focus="headerSearch"
+                        ><i class="fas fa-search header-nav-top-icon"></i
+                      ></a>
+                      <div
+                        class="header-nav-features-dropdown"
+                        id="headerTopSearchDropdown"
+                      >
+                        <form
+                          role="search"
+                          action="page-search-results.html"
+                          method="get"
+                        >
+                          <div class="simple-search input-group">
+                            <input
+                              class="form-control text-1"
+                              id="headerSearch"
+                              name="q"
+                              type="search"
+                              value=""
+                              placeholder="Search..."
+                            />
+                            <button class="btn" type="submit">
+                              <i class="fas fa-search header-nav-top-icon"></i>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        header-nav-feature header-nav-features-cart
+                        d-inline-flex
+                        ms-2
+                      "
+                    >
+                      <a href="#" class="header-nav-features-toggle">
+                        <img
+                          src="img/icons/icon-cart.svg"
+                          width="14"
+                          alt=""
+                          class="header-nav-top-icon-img"
+                        />
+                        <span class="cart-info">
+                          <span class="cart-qty">1</span>
+                        </span>
+                      </a>
+                      <div
+                        class="header-nav-features-dropdown"
+                        id="headerTopCartDropdown"
+                      >
+                        <ol class="mini-products-list">
+                          <li class="item">
                             <a
                               href="#"
-                              title="Remove This Item"
-                              class="btn-remove"
-                              ><i class="fas fa-times"></i
-                            ></a>
-                          </div>
-                        </li>
-                      </ol>
-                      <div class="totals">
-                        <span class="label">Total:</span>
-                        <span class="price-total"
-                          ><span class="price">$350</span></span
-                        >
-                      </div>
-                      <div class="actions">
-                        <a
-                          class="btn btn-primary w-100"
-                          href="demo-product-landing-checkout.html"
-                          >Checkout</a
-                        >
+                              title="Camera X1000"
+                              class="product-image"
+                              ><img
+                                src="img/products/product-1.jpg"
+                                alt="Camera X1000"
+                            /></a>
+                            <div class="product-details">
+                              <p class="product-name">
+                                <a href="#">Camera X1000 </a>
+                              </p>
+                              <p class="qty-price">
+                                1X <span class="price">$890</span>
+                              </p>
+                              <a
+                                href="#"
+                                title="Remove This Item"
+                                class="btn-remove"
+                                ><i class="fas fa-times"></i
+                              ></a>
+                            </div>
+                          </li>
+                        </ol>
+                        <div class="totals">
+                          <span class="label">Total:</span>
+                          <span class="price-total"
+                            ><span class="price">$890</span></span
+                          >
+                        </div>
+                        <div class="actions">
+                          <a class="btn btn-dark" href="#">View Cart</a>
+                          <a class="btn btn-primary" href="#">Checkout</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button
-                  class="btn header-btn-collapse-nav ms-3"
-                  data-bs-toggle="collapse"
-                  data-bs-target=".header-nav-main nav"
-                >
-                  <i class="fas fa-bars"></i>
-                </button>
               </div>
             </div>
           </div>
         </div>
       </header>
 
+      <!-- HERO -->
+
       <div role="main" class="main">
-        <section
-          id="intro"
+        <div
           class="
-            section section-with-shape-divider
-            border-0
-            custom-bg-color-grey-1
-            overflow-visible
-            m-0
-            pt-5
-            pb-5 pb-lg-0
+            owl-carousel
+            owl-carousel-light
+            owl-carousel-light-init-fadeIn
+            owl-theme
+            manual
+            dots-inside dots-horizontal-center
+            show-dots-hover
+            dots-light
+            nav-style-1
+            nav-inside
+            nav-inside-plus
+            nav-dark
+            nav-lg
+            nav-font-size-lg
+            show-nav-hover
+            mb-0
           "
+          data-plugin-options="{'autoplayTimeout': 7000}"
+          data-dynamic-height="['650px','650px','650px','550px','500px']"
+          style="height: 650px"
         >
-          <div class="container position-relative z-index-2 h-100 py-md-5">
-            <div
-              class="
-                row
-                align-items-center
-                justify-content-center
-                h-100
-                pt-5
-                py-xl-5
-                my-xl-5
-              "
-            >
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <!-- Carousel Slide 1 -->
               <div
                 class="
-                  col-md-10 col-lg-6
-                  text-center text-sm-end
-                  order-2 order-lg-1
-                  pe-lg-0
-                  py-lg-5
-                  my-lg-5
-                "
-              >
-                <h1
-                  class="
-                    text-13
-                    ls-0
-                    line-height-1
-                    custom-ws-nowrap
-                    mb-3
-                    z-index-1
-                    position-relative
-                    text-center text-sm-start
-                  "
-                >
-                  <span class="d-block position-relative">
-                    <span
-                      class="
-                        custom-bg-color-grey-1
-                        z-index-1
-                        position-relative
-                        pe-sm-4
-                      "
-                    >
-                      <span
-                        class="
-                          d-inline-block
-                          text-color-grey
-                          positive-ls-3
-                          custom-font-size-1 custom-letter-spacing-1
-                          appear-animation
-                        "
-                        data-appear-animation="fadeInLeftShorter"
-                        data-appear-animation-delay="1000"
-                        >INTRODUCING</span
-                      >
-                    </span>
-                    <svg
-                      class="
-                        d-none d-sm-block
-                        position-absolute
-                        left-0
-                        top-50pct
-                        transform3dy-n50
-                        mt-2
-                      "
-                      height="1"
-                      width="99%"
-                    >
-                      <line
-                        x1="0"
-                        y1="0"
-                        x2="600"
-                        y2="0"
-                        stroke="#969696"
-                        stroke-width="5"
-                        class="appear-animation"
-                        data-appear-animation="customSVGLineAnim"
-                        data-appear-animation-delay="100"
-                        data-appear-animation-duration="2s"
-                      ></line>
-                    </svg>
-                  </span>
-                  <strong
-                    class="
-                      font-weight-extra-bold
-                      text-3 text-sm-3-4 text-md-4 text-lg-3 text-xl-4
-                      d-inline-block
-                      negative-ls-2
-                      position-relative
-                      z-index-1
-                      appear-animation
-                    "
-                    data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="800"
-                    >Kickbud</strong
-                  >
-                </h1>
-                <p
-                  class="
-                    font-weight-light
-                    text-5 text-center text-sm-end
-                    mb-4
-                    appear-animation
-                  "
-                  data-appear-animation="fadeInLeftShorter"
-                  data-appear-animation-delay="1400"
-                >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                  obcaecati nesciunt blanditiis qui cumque?
-                </p>
-                <div
-                  class="
-                    d-flex
-                    flex-column flex-sm-row
-                    align-items-center
-                    justify-content-end
-                    mb-4
-                    appear-animation
-                  "
-                  data-appear-animation="fadeInLeftShorter"
-                  data-appear-animation-delay="1600"
-                >
-                  <span class="font-weight-light text-4">Starting at</span>
-                  <span
-                    class="
-                      text-color-primary
-                      font-weight-bold
-                      text-11
-                      my-3 my-sm-0
-                      mx-4
-                    "
-                    >₹499</span
-                  >
-                  <a
-                    href="demo-product-landing-checkout.html"
-                    class="
-                      btn btn-primary btn-rounded
-                      font-weight-bold
-                      text-4
-                      px-5
-                      py-3
-                    "
-                    >Buy Now!</a
-                  >
-                </div>
-                <a
-                  href="#"
-                  class="
-                    d-inline-flex
-                    align-items-center
-                    text-color-default
-                    text-color-hover-primary
-                    text-decoration-none
-                    font-weight-medium
-                    ms-3 ms-sm-0
-                    appear-animation
-                  "
-                  data-appear-animation="fadeInLeftShorter"
-                  data-appear-animation-delay="1800"
-                  >Learn More <i class="icons icon-arrow-right text-1 ms-2"></i
-                ></a>
-              </div>
-              <div
-                class="
-                  col-lg-6
-                  align-self-xl-stretch
+                  owl-item
                   position-relative
-                  order-1 order-lg-2
+                  overlay overlay-show overlay-op-8
+                "
+                data-dynamic-height="['650px','650px','650px','550px','500px']"
+                style="
+                  background-image: url(img/slides/slide-corporate-6-1.jpg);
+                  background-size: cover;
+                  background-position: center;
                 "
               >
-                <div class="custom-product-image-style-1 d-none d-lg-block">
-                  <img
-                    src="https://source.unsplash.com/random/700x700"
-                    class="img-fluid appear-animation"
-                    alt=""
-                    data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="600"
-                  />
+                <div class="container position-relative z-index-3 h-100">
+                  <div
+                    class="row justify-content-center align-items-center h-100"
+                  >
+                    <div class="col-lg-7 text-center">
+                      <div
+                        class="
+                          d-flex
+                          flex-column
+                          align-items-center
+                          justify-content-center
+                          h-100
+                        "
+                      >
+                        <h1
+                          class="
+                            text-color-light
+                            font-weight-extra-bold
+                            text-12-5
+                            line-height-1 line-height-sm-3
+                            mb-2
+                            appear-animation
+                          "
+                          data-appear-animation="blurIn"
+                          data-appear-animation-delay="500"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                        >
+                          PORTO TEMPLATE
+                        </h1>
+                        <p
+                          class="
+                            text-4-5 text-color-light
+                            font-weight-light
+                            opacity-7
+                            text-center
+                            mb-5
+                          "
+                          data-plugin-animated-letters
+                          data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 30}"
+                        >
+                          Trusted by over 40,000 satisfied users.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-light btn-outline
+                            text-color-light text-color-hover-dark
+                            font-weight-bold
+                            text-3
+                            btn-px-5
+                            py-3
+                            appear-animation
+                          "
+                          data-appear-animation="fadeInUpShorter"
+                          data-appear-animation-delay="1800"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                          >GEST STARTED NOW!</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Slide 2 -->
+              <div
+                class="
+                  owl-item
+                  position-relative
+                  overlay overlay-show overlay-op-7
+                "
+                data-dynamic-height="['650px','650px','650px','550px','500px']"
+                style="
+                  background-image: url(img/slides/slide-corporate-2-1.jpg);
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="container position-relative z-index-3 h-100">
+                  <div
+                    class="row justify-content-center align-items-center h-100"
+                  >
+                    <div class="col-lg-7 text-center">
+                      <div
+                        class="
+                          d-flex
+                          flex-column
+                          align-items-center
+                          justify-content-center
+                          h-100
+                        "
+                      >
+                        <h3
+                          class="
+                            position-relative
+                            text-color-light text-5
+                            line-height-5
+                            font-weight-medium
+                            ls-0
+                            px-4
+                            mb-2
+                            appear-animation
+                          "
+                          data-appear-animation="fadeInDownShorterPlus"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                        >
+                          <span
+                            class="
+                              position-absolute
+                              right-100pct
+                              top-50pct
+                              transform3dy-n50
+                              opacity-7
+                            "
+                          >
+                            <img
+                              src="img/slides/slide-title-border-light.png"
+                              class="w-auto appear-animation"
+                              data-appear-animation="fadeInRightShorter"
+                              data-appear-animation-delay="250"
+                              data-plugin-options="{'minWindowWidth': 0}"
+                              alt=""
+                            />
+                          </span>
+                          HELLO, THIS IS
+                          <span
+                            class="
+                              position-absolute
+                              left-100pct
+                              top-50pct
+                              transform3dy-n50
+                              opacity-7
+                            "
+                          >
+                            <img
+                              src="img/slides/slide-title-border-light.png"
+                              class="w-auto appear-animation"
+                              data-appear-animation="fadeInLeftShorter"
+                              data-appear-animation-delay="250"
+                              data-plugin-options="{'minWindowWidth': 0}"
+                              alt=""
+                            />
+                          </span>
+                        </h3>
+                        <h1
+                          class="
+                            text-color-light
+                            font-weight-extra-bold
+                            text-12-5
+                            line-height-1 line-height-sm-3
+                            mb-2
+                            appear-animation
+                          "
+                          data-appear-animation="blurIn"
+                          data-appear-animation-delay="500"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                        >
+                          PORTO HTML TEMPLATE
+                        </h1>
+                        <p
+                          class="
+                            text-4-5 text-color-light
+                            font-weight-light
+                            opacity-7
+                            text-center
+                            mb-5
+                          "
+                          data-plugin-animated-letters
+                          data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 30}"
+                        >
+                          Trusted by over 40,000 satisfied users.
+                        </p>
+                        <a
+                          href="#"
+                          class="
+                            btn btn-light btn-outline
+                            text-color-light text-color-hover-dark
+                            font-weight-bold
+                            text-3
+                            btn-px-5
+                            py-3
+                            appear-animation
+                          "
+                          data-appear-animation="fadeInUpShorter"
+                          data-appear-animation-delay="1800"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                          >GEST STARTED NOW!</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="spacer pt-5 pb-4"></div>
-          <div class="shape-divider shape-divider-bottom" style="height: 215px">
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              viewBox="0 0 1920 215"
-              preserveAspectRatio="xMinYMin"
-            >
-              <path
-                fill="#FFF"
-                d="M-13,24c3.03-0.28,7.53-0.66,13-1c26.45-1.65,46.73-0.59,57,0c76.61,4.41,118,9,118,9
-							c70.55,7.83,105.82,11.74,151,19c32.98,5.3,65.87,11.44,179,37c145.79,32.94,138.71,33.5,203,47c85.09,17.87,149.08,31.32,237,40
-							c113.11,11.17,203.29,8.29,234,7c16.74-0.7,63.49-4.13,157-11c107.74-7.91,117.84-9.32,153-10c52.52-1.02,97.8,0.79,153,3
-							c21.27,0.85,54.96,2.38,96,5c37.55,2.4,68.64,4.91,119,9c30.97,2.52,56.12,4.64,72,6c0,13.33,0,26.67,0,40c-646,0-1292,0-1938,0
-							C-10.33,157.33-11.67,90.67-13,24z"
-              />
-            </svg>
+          <div class="owl-dots mb-5">
+            <button role="button" class="owl-dot active"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
           </div>
-        </section>
+        </div>
 
         <!-- FIRST IN Z -->
 
