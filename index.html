@@ -82,6 +82,12 @@
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
+
+    <!-- Snipcart -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
+    />
   </head>
   <body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
     <!-- NAV + HERO -->
@@ -146,7 +152,10 @@
                       <i class="fas fa-bars"></i>
                     </button>
                   </div>
-                  <div
+
+                  <!-- Disabling theme's cart -->
+
+                  <!-- <div
                     class="
                       header-nav-features
                       header-nav-features-no-border
@@ -214,7 +223,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -633,8 +642,8 @@
                       <img
                         alt=""
                         class="img-fluid"
-                        src="img/demos/product-landing/product-carousel-1.jpg"
-                        data-zoom-image="img/demos/product-landing/product-carousel-1.jpg"
+                        src="product.jpeg"
+                        data-zoom-image="product.jpg"
                       />
                     </div>
                     <div>
@@ -709,7 +718,9 @@
                 data-appear-animation-delay="400"
               >
                 <div class="summary entry-summary position-relative">
-                  <h1 class="mb-0 font-weight-bold text-8">Kickbud - Orange</h1>
+                  <h1 class="mb-0 font-weight-bold text-8">
+                    Kickbud - Original Color
+                  </h1>
 
                   <p class="price mb-3">
                     <span class="sale text-color-primary font-weight-bold ms-1"
@@ -719,9 +730,8 @@
                   </p>
 
                   <p class="text-3-5 mb-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    tempus nibh sed elimttis adipiscing. Fusce in hendrerit
-                    purus. Lorem ipsum dolor sit amet.
+                    The Kickbud arrives in an easy to carry package. Play with
+                    friends, family or teammates anywhere, anytime.
                   </p>
 
                   <!-- <ul class="list list-unstyled text-2">
@@ -787,9 +797,17 @@
                           font-weight-bold
                           text-3-5
                           btn-px-5 btn-py-2
+                          buy-button
+                          snipcart-add-item
                         "
+                        data-item-id="1"
+                        data-item-price="499"
+                        data-item-url="/"
+                        data-item-name="Kickbud"
+                        data-item-image="https://raw.githubusercontent.com/alabhyajindal/kickbud/main/product.jpg"
+                        data-item-description="The Kickbud arrives in an easy to carry package. Play with friends, family or teammates anywhere, anytime. "
                       >
-                        Buy Now!
+                        Buy Now
                       </button>
                     </div>
                   </form>
@@ -855,107 +873,9 @@
                             line-height-6
                           "
                         >
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Ducimus dicta culpa esse eius provident qui
-                          animi.
-                        </p>
-                        <div
-                          class="
-                            divider divider-small divider-small-sm
-                            ps-4
-                            ms-3
-                          "
-                        >
-                          <hr />
-                        </div>
-                        <div class="testimonial-author ps-4 ms-3">
-                          <p class="alternative-font-4 text-start">
-                            <strong
-                              class="
-                                font-weight-medium
-                                text-color-dark
-                                opacity-9
-                              "
-                              >Alabhya Jindal</strong
-                            >
-                          </p>
-                        </div>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      class="
-                        custom-testimonial-style-1
-                        testimonial
-                        testimonial-with-quotes
-                        testimonial-remove-right-quote
-                        testimonial-style-2
-                        text-start
-                        mb-0
-                      "
-                    >
-                      <blockquote class="pt-0">
-                        <p
-                          class="
-                            text-color-dark
-                            font-weight-medium
-                            text-5
-                            line-height-6
-                          "
-                        >
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Ducimus dicta culpa esse eius provident qui
-                          animi.
-                        </p>
-                        <div
-                          class="
-                            divider divider-small divider-small-sm
-                            ps-4
-                            ms-3
-                          "
-                        >
-                          <hr />
-                        </div>
-                        <div class="testimonial-author ps-4 ms-3">
-                          <p class="alternative-font-4 text-start">
-                            <strong
-                              class="
-                                font-weight-medium
-                                text-color-dark
-                                opacity-9
-                              "
-                              >Ajit Sharma</strong
-                            >
-                          </p>
-                        </div>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      class="
-                        custom-testimonial-style-1
-                        testimonial
-                        testimonial-with-quotes
-                        testimonial-remove-right-quote
-                        testimonial-style-2
-                        text-start
-                        mb-0
-                      "
-                    >
-                      <blockquote class="pt-0">
-                        <p
-                          class="
-                            text-color-dark
-                            font-weight-medium
-                            text-5
-                            line-height-6
-                          "
-                        >
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Ducimus dicta culpa esse eius provident qui
-                          animi.
+                          Love this game!! Been using it as a warm-up before
+                          soccer games and I see great improvement in my first
+                          touches.
                         </p>
                         <div
                           class="
@@ -975,6 +895,103 @@
                                 opacity-9
                               "
                               >Mohit Shah</strong
+                            >
+                          </p>
+                        </div>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="
+                        custom-testimonial-style-1
+                        testimonial
+                        testimonial-with-quotes
+                        testimonial-remove-right-quote
+                        testimonial-style-2
+                        text-start
+                        mb-0
+                      "
+                    >
+                      <blockquote class="pt-0">
+                        <p
+                          class="
+                            text-color-dark
+                            font-weight-medium
+                            text-5
+                            line-height-6
+                          "
+                        >
+                          Got a Kickbud for my son who wouldn’t get off his
+                          phone. Now he can’t stop playing with it. So happy to
+                          see him active.
+                        </p>
+                        <div
+                          class="
+                            divider divider-small divider-small-sm
+                            ps-4
+                            ms-3
+                          "
+                        >
+                          <hr />
+                        </div>
+                        <div class="testimonial-author ps-4 ms-3">
+                          <p class="alternative-font-4 text-start">
+                            <strong
+                              class="
+                                font-weight-medium
+                                text-color-dark
+                                opacity-9
+                              "
+                              >Kaushalya Rathi</strong
+                            >
+                          </p>
+                        </div>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="
+                        custom-testimonial-style-1
+                        testimonial
+                        testimonial-with-quotes
+                        testimonial-remove-right-quote
+                        testimonial-style-2
+                        text-start
+                        mb-0
+                      "
+                    >
+                      <blockquote class="pt-0">
+                        <p
+                          class="
+                            text-color-dark
+                            font-weight-medium
+                            text-5
+                            line-height-6
+                          "
+                        >
+                          This looked very difficult on video. Once I got the
+                          hang of it I can’t stop playing.
+                        </p>
+                        <div
+                          class="
+                            divider divider-small divider-small-sm
+                            ps-4
+                            ms-3
+                          "
+                        >
+                          <hr />
+                        </div>
+                        <div class="testimonial-author ps-4 ms-3">
+                          <p class="alternative-font-4 text-start">
+                            <strong
+                              class="
+                                font-weight-medium
+                                text-color-dark
+                                opacity-9
+                              "
+                              >Harsh Mutha</strong
                             >
                           </p>
                         </div>
@@ -1434,5 +1451,16 @@
     <!-- Examples -->
     <script src="js/examples/examples.image360.js"></script>
     <script src="js/examples/examples.gallery.js"></script>
+
+    <!-- Snipcart -->
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"
+    ></script>
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="MmE1Y2Q4NDItYzgxOC00ZGRiLWE2ZGMtZjA4MzA5OWY0YzY5NjM3NzEwOTc3MTczMzcxODU2"
+    ></div>
   </body>
 </html>
