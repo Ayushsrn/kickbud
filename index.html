@@ -15,8 +15,10 @@
     <meta name="author" content="Alabhya Jindal" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Mobile Metas -->
     <meta
@@ -131,15 +133,15 @@
                       <nav class="collapse">
                         <ul class="nav nav-pills" id="mainNav">
                           <li>
-                            <a href="index.html">About</a>
+                            <a href="#about">About</a>
                           </li>
 
                           <li>
-                            <a href="elements.html">How to Play </a>
+                            <a href="#howtoplay">How to Play </a>
                           </li>
 
                           <li>
-                            <a href="#">Shop</a>
+                            <a href="#shop">Shop</a>
                           </li>
                         </ul>
                       </nav>
@@ -153,9 +155,17 @@
                     </button>
                   </div>
 
+                  <!-- Cart -->
+
+                  <!-- <button class="snipcart-checkout">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span class="snipcart-total-price">$0.00</span>
+                    (<span class="snipacart-items-count">0</span>)
+                  </button> -->
+
                   <!-- Disabling theme's cart -->
 
-                  <!-- <div
+                  <div
                     class="
                       header-nav-features
                       header-nav-features-no-border
@@ -170,7 +180,10 @@
                         ms-2
                       "
                     >
-                      <a href="#" class="header-nav-features-toggle">
+                      <a
+                        href="#"
+                        class="header-nav-features-toggle snipcart-checkout"
+                      >
                         <img
                           src="img/icons/icon-cart.svg"
                           width="14"
@@ -178,52 +191,15 @@
                           class="header-nav-top-icon-img"
                         />
                         <span class="cart-info">
-                          <span class="cart-qty">1</span>
+                          <span class="cart-qty snipcart-items-count">0</span>
                         </span>
                       </a>
                       <div
                         class="header-nav-features-dropdown"
                         id="headerTopCartDropdown"
-                      >
-                        <ol class="mini-products-list">
-                          <li class="item">
-                            <a
-                              href="#"
-                              title="Camera X1000"
-                              class="product-image"
-                              ><img
-                                src="img/products/product-1.jpg"
-                                alt="Camera X1000"
-                            /></a>
-                            <div class="product-details">
-                              <p class="product-name">
-                                <a href="#">Camera X1000 </a>
-                              </p>
-                              <p class="qty-price">
-                                1X <span class="price">$890</span>
-                              </p>
-                              <a
-                                href="#"
-                                title="Remove This Item"
-                                class="btn-remove"
-                                ><i class="fas fa-times"></i
-                              ></a>
-                            </div>
-                          </li>
-                        </ol>
-                        <div class="totals">
-                          <span class="label">Total:</span>
-                          <span class="price-total"
-                            ><span class="price">$890</span></span
-                          >
-                        </div>
-                        <div class="actions">
-                          <a class="btn btn-dark" href="#">View Cart</a>
-                          <a class="btn btn-primary" href="#">Checkout</a>
-                        </div>
-                      </div>
+                      ></div>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -261,7 +237,7 @@
                 class="
                   owl-item
                   position-relative
-                  overlay overlay-show overlay-op-8
+                  overlay overlay-show overlay-op-3
                 "
                 data-dynamic-height="['650px','650px','650px','550px','500px']"
                 style="
@@ -314,7 +290,7 @@
                           evening.
                         </p>
                         <a
-                          href="#"
+                          href="#shop"
                           class="
                             btn btn-light btn-outline
                             text-color-light text-color-hover-dark
@@ -322,12 +298,19 @@
                             text-3
                             btn-px-5
                             py-3
+
+                            btn btn-primary btn-rounded
+                          font-weight-bold
+                          text-3-5
+                          btn-px-5 btn-py-2
+                          buy-button
+
                             appear-animation
                           "
                           data-appear-animation="fadeInUpShorter"
                           data-appear-animation-delay="1800"
                           data-plugin-options="{'minWindowWidth': 0}"
-                          >Buy Now!</a
+                          >Shop</a
                         >
                       </div>
                     </div>
@@ -469,7 +452,7 @@
 
         <!-- FIRST IN Z -->
 
-        <section class="section bg-transparent m-0 border-0">
+        <section class="section bg-transparent m-0 border-0" id="about">
           <div class="container">
             <div class="row py-2 align-items-center justify-content-center">
               <div class="col-lg-6 text-center text-lg-start">
@@ -518,7 +501,6 @@
                   data-appear-animation="fadeInUpShorter"
                   data-appear-animation-delay="600"
                   >BUY NOW</a -->
-                >
               </div>
               <div class="col-lg-6 text-center">
                 <img
@@ -535,7 +517,7 @@
 
         <!-- SECOND IN Z -->
 
-        <section class="section m-0 border-0">
+        <section class="section m-0 border-0" id="howtoplay">
           <div class="container">
             <div class="row py-2 align-items-center justify-content-center">
               <div class="col-lg-6 text-center">
@@ -586,7 +568,7 @@
                 </ul>
                 <p>PS – Avoid extremely windy places</p>
 
-                <a
+                <!-- <a
                   href="#"
                   class="
                     btn btn-dark
@@ -601,7 +583,7 @@
                   data-appear-animation="fadeInUpShorter"
                   data-appear-animation-delay="600"
                   >BUY NOW</a
-                >
+                > -->
               </div>
             </div>
           </div>
@@ -617,6 +599,7 @@
             pt-0
             m-0
           "
+          id="shop"
         >
           <div
             class="container shop pb-4"
@@ -715,7 +698,7 @@
               <div
                 class="col-lg-7 appear-animation"
                 data-appear-animation="fadeInUpShorter"
-                data-appear-animation-delay="400"
+                data-appear-animation-delay="400" style="align-self: center;"
               >
                 <div class="summary entry-summary position-relative">
                   <h1 class="mb-0 font-weight-bold text-8">
@@ -750,46 +733,7 @@
                     class="cart"
                     action="shop-cart.html"
                   >
-                    <div class="d-flex align-items-center my-4">
-                      <div class="quantity quantity-lg float-none me-3 mb-0">
-                        <input
-                          type="button"
-                          class="
-                            minus
-                            bg-transparent
-                            text-color-hover-light
-                            bg-color-hover-primary
-                            border-color-hover-primary border
-                          "
-                          value="-"
-                        />
-                        <input
-                          type="text"
-                          class="
-                            input-text
-                            qty
-                            text
-                            bg-transparent
-                            border border-start-0 border-end-0
-                          "
-                          title="Qty"
-                          value="1"
-                          name="quantity"
-                          min="1"
-                          step="1"
-                        />
-                        <input
-                          type="button"
-                          class="
-                            plus
-                            bg-transparent
-                            text-color-hover-light
-                            bg-color-hover-primary
-                            border-color-hover-primary border
-                          "
-                          value="+"
-                        />
-                      </div>
+                   
                       <button
                         type="submit"
                         class="
@@ -804,7 +748,7 @@
                         data-item-price="499"
                         data-item-url="https://kickbud1.netlify.app/"
                         data-item-name="Kickbud"
-                        data-item-image="product.jpg"
+                        data-item-image="https://i.ibb.co/gzG19s6/product.jpg"
                         data-item-description="The Kickbud arrives in an easy to carry package. Play with friends, family or teammates anywhere, anytime. "
                       >
                         Buy Now
@@ -819,7 +763,73 @@
 
         <!-- TESTIMONIALS -->
 
-        <section class="section border-0 m-0">
+        <div class="row mt-5 mb-5" style="padding: 4rem;">
+          <div class="col-lg-4 pe-lg-0">
+            <h2 class="text-color-dark font-weight-semibold text-6 line-height-3 mb-3">Check out what are clients are saying about us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Sed imperdiet ibero id nisi euismod, sed porta est consectetur.</p>
+          </div>
+          <div class="col-lg-8 ps-lg-4">
+            <div class="owl-carousel custom-carousel-style-1 custom-carousel-dots-style-1" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '979': {'items': 2}, '1199': {'items': 2}}, 'margin': 0, 'loop': true, 'dots': true, 'nav': false, 'autoplay': true}">
+              <div>
+                <div class="testimonial testimonial-style-3 custom-testimonial-style-1">
+                  <blockquote>
+                    <p class="mb-0">Love this game!! Been using it as a warm-up before soccer games and I see great improvement in my first touches.</p>
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-thumbnail">
+                      <img src="local-images/customers/mohit-shah.png" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <p><strong class="font-weight-semibold text-4 mb-1">Mohit Shah</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="testimonial testimonial-style-3 custom-testimonial-style-1">
+                  <blockquote>
+                    <p class="mb-0">Got a Kickbud for my son who wouldn’t get off his phone. Now he can’t stop playing with it. So happy to see him active.</p>
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-thumbnail">
+                      <img src="img/clients/client-2.jpg" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <p><strong class="font-weight-semibold text-4 mb-1">Kaushalya Rathi</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="testimonial testimonial-style-3 custom-testimonial-style-1">
+                  <blockquote>
+                    <p class="mb-0">This looked difficult to play initially. Now that I have got the hang of it I can’t stop playing. Highly recommended!
+                    </p>
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-thumbnail">
+                      <img src="img/clients/client-3.jpg" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <p><strong class="font-weight-semibold text-4 mb-1">Harsh Mutha</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="testimonial testimonial-style-3 custom-testimonial-style-1">
+                  <blockquote>
+                    <p class="mb-0">Managed to make 14 juggles on the first day. Going to need some practise but this is funnnn!</p>
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <div class="testimonial-author-thumbnail">
+                      <img src="local-images/customers/alabhya-jindal.png" class="img-fluid rounded-circle" alt="">
+                    </div>
+                    <p><strong class="font-weight-semibold text-4 mb-1">Alabhya Jindal</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OLD BEGINS HERE -->
+
+        <!-- <section class="section border-0 m-0">
           <div class="container py-3">
             <div class="row">
               <div class="col">
@@ -1002,7 +1012,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- GALLERY -->
         <section
@@ -1011,20 +1021,7 @@
           <div class="container pt-2">
             <div class="row">
               <div class="col text-center">
-                <h2
-                  class="
-                    text-color-primary
-                    positive-ls-3
-                    text-4
-                    line-height-1
-                    mb-2
-                    appear-animation
-                  "
-                  data-appear-animation="fadeInUpShorterPlus"
-                  data-appear-animation-delay="200"
-                >
-                  INSIDE Kickbud
-                </h2>
+                
                 <h3
                   class="
                     text-color-dark text-transform-none text-9
@@ -1032,7 +1029,7 @@
                     font-weight-medium
                     mb-4
                     appear-animation
-                  "
+                  " style="margin-top: -3rem;"
                   data-appear-animation="fadeInUpShorterPlus"
                   data-appear-animation-delay="400"
                 >
@@ -1285,7 +1282,7 @@
                       type="submit"
                     >
                       <strong class="position-relative top-1"
-                        >SUBSCRIBE NOW!</strong
+                        >Subscribe!</strong
                       >
                     </button>
                   </div>
@@ -1367,12 +1364,12 @@
                     ><i class="fab fa-facebook-f"></i
                   ></a>
                 </li>
-                <li class="social-icons-twitter">
+                <li class="social-icons-instagram">
                   <a
                     href="http://www.twitter.com/"
                     target="_blank"
-                    title="Twitter"
-                    ><i class="fab fa-twitter"></i
+                    title="Instagram"
+                    ><i class="fab fa-instagram"></i
                   ></a>
                 </li>
                 <li class="social-icons-linkedin">
@@ -1397,9 +1394,9 @@
                 "
               >
                 <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-cc-paypal"></i>
-                <i class="fab fa-cc-stripe"></i>
                 <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-stripe"></i>
+                <i class="fab fa-cc-paypal"></i>
                 <i class="fab fa-cc-apple-pay"></i>
               </div>
             </div>
@@ -1462,5 +1459,16 @@
       id="snipcart"
       data-api-key="MmE1Y2Q4NDItYzgxOC00ZGRiLWE2ZGMtZjA4MzA5OWY0YzY5NjM3NzEwOTc3MTczMzcxODU2"
     ></div>
+
+    <!-- Ionicons -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
