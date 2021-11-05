@@ -1083,7 +1083,18 @@
 
     <!-- Snipcart -->
     <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"></script>
-    <div hidden id="snipcart" data-api-key="ZDIyMzAzY2MtM2JkMy00YjNmLWFhZDQtNDdhYmQ3NzljZDlmNjM3NzEwOTc3MTczMzcxODU2"></div>
+    <div hidden id="snipcart" data-api-key="ZDIyMzAzY2MtM2JkMy00YjNmLWFhZDQtNDdhYmQ3NzljZDlmNjM3NzEwOTc3MTczMzcxODU2">
+	<billing section="bottom">
+    <fieldset class="snipcart-form__set">
+        <div class="snipcart-form__field">
+            <snipcart-label class="snipcart__font--tiny" for="vatNumber">
+                VAT Number
+            </snipcart-label>
+            <snipcart-input name="vatNumber"></snipcart-input>
+        </div>
+    </fieldset>
+</billing>
+	</div>
 
     <!-- Ionicons -->
 
