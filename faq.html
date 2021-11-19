@@ -84,12 +84,18 @@
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
+	  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZYBND0E79"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Snipcart -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
-    />
+  gtag('config', 'G-5ZYBND0E79');
+</script>
+
+    
   </head>
   <body data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
     <!-- NAV + HERO -->
@@ -108,7 +114,7 @@
                   <div class="header-logo">
                     <a href="index.html">
                       <img
-                        alt="Porto"
+                        alt="Kickbud"
                         width="189"
                         height="46"
                         data-sticky-width="189"
@@ -133,21 +139,15 @@
                       <nav class="collapse">
                         <ul class="nav nav-pills" id="mainNav">
                           <li>
-                            <a href="https://kickbud.in/index.html#about"
-                              >About</a
-                            >
+                            <a href="#about">About</a>
                           </li>
 
                           <li>
-                            <a href="https://kickbud.in/index.html#howtoplay"
-                              >How to Play
-                            </a>
+                            <a href="#howtoplay">How to Play </a>
                           </li>
 
                           <li>
-                            <a href="https://kickbud.in/index.html#shop"
-                              >Shop</a
-                            >
+                            <a href="#shop">Shop</a>
                           </li>
                         </ul>
                       </nav>
@@ -171,7 +171,7 @@
 
                   <!-- Disabling theme's cart -->
 
-                  <div
+                  <!-- <div
                     class="
                       header-nav-features
                       header-nav-features-no-border
@@ -187,8 +187,8 @@
                       "
                     >
                       <a
-                        href="#"
-                        class="header-nav-features-toggle snipcart-checkout"
+                        href="#shop"
+                        class="header-nav-features-toggle"
                       >
                         <img
                           src="img/icons/icon-cart.svg"
@@ -196,16 +196,11 @@
                           alt=""
                           class="header-nav-top-icon-img"
                         />
-                        <span class="cart-info">
-                          <span class="cart-qty snipcart-items-count">0</span>
-                        </span>
+                        
                       </a>
-                      <div
-                        class="header-nav-features-dropdown"
-                        id="headerTopCartDropdown"
-                      ></div>
+                      
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -613,27 +608,7 @@
     <!-- Examples -->
     <script src="js/examples/examples.image360.js"></script>
     <script src="js/examples/examples.gallery.js"></script>
-
-    <!-- Snipcart -->
-    <script
-      async
-      src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"
-    ></script>
-    <div
-      hidden
-      id="snipcart"
-      data-api-key="ZDIyMzAzY2MtM2JkMy00YjNmLWFhZDQtNDdhYmQ3NzljZDlmNjM3NzEwOTc3MTczMzcxODU2"
-    >
-      <billing section="bottom">
-        <fieldset class="snipcart-form__set">
-          <div class="snipcart-form__field">
-            <snipcart-label class="snipcart__font--tiny" for="phone">
-              Phone Number
-            </snipcart-label>
-            <snipcart-input name="phone" required></snipcart-input>
-          </div>
-        </fieldset>
-      </billing>
+    
     </div>
 
     <!-- Ionicons -->
