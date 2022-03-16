@@ -301,3 +301,99 @@ html:not(.sticky-header-active) #header .header-body.header-border-bottom {
 .cd-product-viewer-handle .fill {
 		background-color: #e8e9e9;
 }
+.button1 {
+  background-color: #ff4713; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+}
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 0px;
+}
+@media only screen and (min-width: 768px) {
+ div#mybutton {
+  display:none;
+}
+.button1{
+  display:none!important}
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right:0px;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #25d366 ;
+  color: white;
+}
+ul {
+        padding: 0;
+        list-style: none;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        /*text-decoration: none;*/
+    }
+    ul li a:hover {
+        color: #008000;
+        /*background: #00FF7F;*/
+    }
+    ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #000000;
+        display: none;
+        position: absolute;
+        white-space: nowrap; 
+        /*z-index: 999;
+        left: 0;*/
+    }
+    ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+    .border-first-button a {
+	  display: inline-block !important;
+	  padding: 10px 20px !important;
+	  color: #fe664e !important;
+	  border: 1px solid #fe664e !important;
+	  border-radius: 23px;
+	  font-weight: 500 !important;
+	  letter-spacing: 0.3px !important;
+	  transition: all .5s;
+	}
+
+	.border-first-button a:hover {
+	  background-color: #fe664e;
+	  color: #fff !important;
+	}
