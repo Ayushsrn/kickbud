@@ -373,8 +373,8 @@ ul {
         display: none;
         position: absolute;
         white-space: nowrap; 
-        /*z-index: 999;
-        left: 0;*/
+        /*z-index: 999;*/
+        left: 0;
     }
     ul li:hover ul.dropdown {
         display: block; /* Display the dropdown */
@@ -397,3 +397,8 @@ ul {
 	  background-color: #fe664e;
 	  color: #fff !important;
 	}
+	@media (max-width: 767px) {
+        .border-first-button {
+          display: none;
+        }
+      }
